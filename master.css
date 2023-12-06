@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 10px rgb(0, 0, 0 , 0.1);
+}
+
+.card .up-card {
+    width: 100%;
+    height: 150px;
+    background-color: #4071ed;
+}
+
+
+.card .down-card {
+    position: relative;
+}
+
+.card  img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    border: 3px solid white;
+    outline: 3px solid #4071ed;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.card .down-card .info {
+    text-align: center;
+    margin-top: 60px;
+}
+.card .down-card .info span:first-child{
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+}
+.card .down-card .info span:last-child{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card .soical{
+display: flex;
+justify-content: center;
+margin-top: 25px;
+
+}
+
+.card .soical a {
+    font-size: 18px;
+    color: white;
+    margin: 0 8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .soical a.facebook {
+    background-color: #1877f2;
+}
+
+.card .soical a.instagram {
+    background-color: #c13584;
+}
+
+.card .soical a.twitter {
+    background-color: #1da1f2;
+}
+
+.card .soical a.youtube {
+    background-color: #ff0000;
+}
+
+.card .bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card .bnt button {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 25px;
+    background-color: #4071ed;
+    border-radius: 25px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .bnt button:hover {
+    background-color: blue;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 20px;
+}
+
+.icons .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 1px solid #e7e7e7e7;
+}
+
+.icons .data:last-child {
+    border: none;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+    cursor: pointer;
+}
